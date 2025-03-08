@@ -46,8 +46,9 @@
 
 >### SCORE CLICKED - onScoreClicked(location)...
 ```
-    When <ScoreSVG> is clicked, finds the timestamp of nearest 
-    event and passes it to onTimeUpdate(time)
+    When <ScoreSVG> is clicked, finds the timestamp of 
+    the nearest item in event.json and passes it 
+    to onTimeUpdate(time)
 ```
 >### SUBCOMPONENTS - return ...
 ```
