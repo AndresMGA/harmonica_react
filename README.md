@@ -88,18 +88,18 @@
 >>>>- speedChangeHandler
 
 **ScoreSVG**
-    This component displays the current score SVG and draws the cursor at the given cuurent position
+>>This component displays the current score SVG and draws the cursor at the given cuurent position
 
-    It notifies App when user clicked on a note or rest   
+>>It notifies App when user clicked on a note or rest   
 
 **HarmonicaStatic**
-    This function displays the non moving parts of the harmonica
+>>This function displays the non moving parts of the harmonica
 
-    Can be chromatic or diatonic
+>>Can be chromatic or diatonic
 
 **HarmonicaMoving**
-    This function displays the moving parts of the harmonica
+>>This function displays the moving parts of the harmonica
 
-    When a new tab is received
-        updates active hole
-        updates position of slide 
+>>When a new tab is received
+>>>- updates active hole
+>>>- updates position of slide 
