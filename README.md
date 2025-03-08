@@ -57,9 +57,9 @@ This component is responsible for following tasks:
 
 >#### HANDLE CLICKS ON SCORE - onScoreClicked(location)...
 ```
-    When <ScoreSVG> is clicked, finds the timestamp of 
-    the nearest item in event.json and passes it 
-    to onTimeUpdate(time, stepPlay=True)
+    This function is triggered from <ScoreSVG> when it is clicked.
+    It finds the timestamp of the nearest item in event.json and 
+    passes it to onTimeUpdate(time, stepPlay=True)
 
     stepPlay is set to True to play only 1 note
 ```
