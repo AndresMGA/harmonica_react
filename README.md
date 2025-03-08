@@ -56,10 +56,10 @@
       <li>events.json</li>
       <li>meta.json</li>
     </ul>
-    </blockquote>
+    
     
     <p>Update Function</p>
-    <blockquote>
+   
       <p>This function is triggered by <code>AudioPlayer</code></p>
       <p>Checks current playback time for new events</p>
       <p>If new event is due:</p>
@@ -67,12 +67,12 @@
         <li>passes new cursor position to ScoreSVG</li>
         <li>passes new tab to HarmonicaMoving</li>
       </ul>
-    </blockquote>
+    
     
     <p>Score Clicked Function</p>
-    <blockquote>
+    
       <p>When score is clicked, finds time of nearest event and passes its time to the Update Function</p>
-    </blockquote>
+    
 
     <p>Create 4 sub-components</p>
     <ul>
@@ -86,6 +86,7 @@
           </li>
         </ul>
       </li>
+      </blockquote>
 
       <li><b>ScoreSVG</b>
         <ul>
