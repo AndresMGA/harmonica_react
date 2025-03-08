@@ -54,15 +54,15 @@
 >>>>- onTimeUpdated
 >>- ScoreSVG
 >>>props
->>>>-svg files
->>>>-current cursor position
->>>>-onScoreClicked
+>>>>- svg files
+>>>>- current cursor position
+>>>>- onScoreClicked
 >>- HarmonicaStatic 
 >>>props
->>>>-harmonica type (chromatic or diatonic)
+>>>>- harmonica type (chromatic or diatonic)
 >>- HarmonicaMoving
 >>>props
->>>>-current tab
+>>>>- current tab
 
 ##AudioPlayer
     This component plays the mp3 files, and triggers the update function in App every 50ms when playback is active
