@@ -50,8 +50,9 @@ This component is responsible for following tasks:
             - passes new cursor position to <ScoreSVG>
             - passes new tab to <HarmonicaMoving>
 
-    If stepPlay=True it will trigger <AudioPlayer> pause at the end 
-    of the note event
+    If stepPlay=True it will trigger <AudioPlayer> play at the 
+    time received and <AudioPlayer> pause at the time of the next
+    note in events.json
         
 ```
 
@@ -69,7 +70,6 @@ This component is responsible for following tasks:
         props | mp3 files
               | onTimeUpdated
               | count
-              | pause
     <ScoreSVG>
         props | svg files
               | current cursor position
