@@ -21,36 +21,34 @@
 
 ```
 
-**App**
+##App
+>####Download All Files
+>>>1_harmonica.mp3
+>>>2_accompaniment.mp3
+>>>3_metronome.mp3
+>>>score-1.svg
+>>>score-2.svg
+>>>score-3.svg
+>>>events.json
+>>>meta.json
 
-    - Download All Files
-    
-        1_harmonica.mp3         
-        2_accompaniment.mp3     
-        3_metronome.mp3         
-        score-1.svg             
-        score-2.svg             
-        score-3.svg            
-        events.json
-        meta.json
-    
-    - Update Function
-    
-        This function is triggered by <AudioPlayer>
+>####Update Function
 
-        Checks current playback time for new events
+>>This function is triggered by <AudioPlayer>
 
-        If new event is due:
-            - passes new cursor position to <ScoreSVG>
-            - passes new tab to <HarmonicaMoving>
+>>Checks current playback time for new events
 
-    - Score Clicked Function
+>>If new event is due:
+>>>>passes new cursor position to ScoreSVG
+>>>>passes new tab to HarmonicaMoving
+
+####Score Clicked Function
 
         When score is clicked, finds time of nearest event and passes its time to the Update Function
-    
-    - It creates 4 sub-components
 
-        AudioPlayer   
+####It creates 4 sub-components
+
+        AudioPlayer
             props:
                 mp3 files
                 onTimeUpdated
@@ -66,18 +64,18 @@
             props:
                 current tab
 
-**AudioPlayer**
+##AudioPlayer
     This component plays the mp3 files, and triggers the update function in App every 50ms when playback is active
 
     It has handler fuctions for its subcomponents
-    
+
         - playHandler
         - pauseHandler
         - stopHandler
         - volumeChangeHandler
         - speedChangeHandler
 
-    - It creates 2 sub-components
+####It creates 2 sub-components
 
         **AudioTransport** (play, pause, stop buttons)
             props:
@@ -89,23 +87,19 @@
                 volumeChangeHandler
                 speedChangeHandler
 
-**ScoreSVG**
+##ScoreSVG
     This component displays the current score SVG and draws the cursor at the given cuurent position
 
     It notifies App when user clicked on a note or rest   
 
-**HarmonicaStatic**
+##HarmonicaStatic
     This function displays the non moving parts of the harmonica
 
     Can be chromatic or diatonic
 
-**HarmonicaMoving**
+##HarmonicaMoving
     This function displays the moving parts of the harmonica
 
     When a new tab is received
         updates active hole
         updates position of slide 
-
-
-
-    
