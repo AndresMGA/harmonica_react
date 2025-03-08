@@ -50,7 +50,7 @@ This component is responsible for following tasks:
             - passes new cursor position to <ScoreSVG>
             - passes new tab to <HarmonicaMoving>
 
-    When stepPlay=True it will trigger <AudioPlayer> pause at the end 
+    If stepPlay=True it will trigger <AudioPlayer> pause at the end 
     of the note event
         
 ```
