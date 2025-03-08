@@ -38,8 +38,8 @@
     This function is triggered by <AudioPlayer>
     Checks current playback time for new events
     If new event is due:
-        - passes new cursor position to ScoreSVG
-        - passes new tab to HarmonicaMoving
+        - passes new cursor position to <ScoreSVG>
+        - passes new tab to <HarmonicaMoving>
 ```
 
 >### SCORE CLICKED - onScoreClicked(location)...
