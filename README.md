@@ -66,7 +66,7 @@
 
 # <AudioPlayer\>
 ```
-    This component uses HTML5's <audio> tag to play the
+    This component uses HTML5's <audio> tags to play the
     mp3 files and passes the current playback time to
     onTimeUpdate() in <HarmonicaScorePlayer> every 50 
     milliseconds while playback is active.
