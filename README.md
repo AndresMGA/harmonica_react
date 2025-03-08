@@ -38,7 +38,7 @@ This component is responsible for following tasks:
 ```
     This function is triggered from <AudioPlayer>
     Checks the current playback time for a matching 
-    event in events.json
+    item in events.json
 
     If a new event is due:
         - passes new cursor position to <ScoreSVG>
