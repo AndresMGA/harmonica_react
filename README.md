@@ -42,7 +42,9 @@ This component is responsible for following tasks:
 
     If a new event is due:
         If it is a count in event:
-            - passes count to <CountIn>
+            - passes count to <CountIn> 
+            - passes count to <AudioPlayer> 
+                (this is to ensure that metronome can be heard)
         If it is a note or rest
             - passes new cursor position to <ScoreSVG>
             - passes new tab to <HarmonicaMoving>
@@ -60,6 +62,7 @@ This component is responsible for following tasks:
     <AudioPlayer>
         props | mp3 files
               | onTimeUpdated
+              | count
     <ScoreSVG>
         props | svg files
               | current cursor position
@@ -78,6 +81,11 @@ This component is responsible for following tasks:
     play the mp3 files and passes the current playback 
     time to onTimeUpdate() in <HarmonicaScorePlayer> every 
     50 milliseconds while playback is active.
+
+    It plays 3 audio files simultaneously
+      - harmonica
+      - accompaniment
+      - metronome    
     
     It has handler fuctions for its subcomponents
       - playHandler
@@ -85,6 +93,9 @@ This component is responsible for following tasks:
       - stopHandler
       - volumeChangeHandler
       - speedChangeHandler
+
+    Metronome track volume is overriden to at least 0.5 if
+    a count in value other than 0 is received
 ```
 
 >#### SUBCOMPONENTS - return ...
@@ -114,9 +125,6 @@ This component is responsible for following tasks:
     of <ScoreSVG>
 
     When a 0 value is received it gets set to invisible.
-    
-    It also ensures that metronome audio track volume is set to 
-    at least 0.5 while a count in is being displayed
 ``` 
 # <HarmonicaStatic\>
 ```
