@@ -1,6 +1,6 @@
 
 
-  <h2>App</h2>
+<h2>App</h2>
   <blockquote>
     <p>Download All Files</p>
     <ul>
@@ -13,8 +13,8 @@
       <li>events.json</li>
       <li>meta.json</li>
     </ul>
-    
-    
+    </blockquote>
+    <blockquote>
     <p>Update Function</p>
    
       <p>This function is triggered by <code>AudioPlayer</code></p>
