@@ -20,8 +20,10 @@
 
 ```
 # <HarmonicaScorePlayer\>
-
->### DOWNLOADS FILES - useEffect()...
+```
+    This component is responsible for following tasks...
+```
+>### DOWNLOAD FILES - useEffect()...
 ```
     1_harmonica.mp3
     2_accompaniment.mp3
@@ -32,7 +34,7 @@
     events.json
     meta.json
 ```
->### UPDATES STATE - onTimeUpdate(time)...
+>### UPDATE STATE - onTimeUpdate(time)...
 ```
     This function is triggered by <AudioPlayer>
     Checks the current playback time for a matching 
@@ -43,7 +45,7 @@
         - passes new tab to <HarmonicaMoving>
 ```
 
->### HANDLES CLICKS ON SCORE - onScoreClicked(location)...
+>### HANDLE CLICKS ON SCORE - onScoreClicked(location)...
 ```
     When <ScoreSVG> is clicked, finds the timestamp of 
     the nearest item in event.json and passes it 
