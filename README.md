@@ -66,8 +66,9 @@
 
 # <AudioPlayer\>
 ```
-    This component plays the mp3 files, and triggers the update 
-    function in App every 50ms when playback is active.
+    This component used HTML5's <audio> tag to play the
+    mp3 files and triggers the update function in <App> 
+    every 50ms when playback is active.
     
     It has handler fuctions for its subcomponents
       - playHandler
