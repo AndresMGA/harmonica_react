@@ -100,7 +100,7 @@
 ```
     This function displays the non moving parts of the harmonica
 
-    Can be chromatic or diatonic
+    Can be chromatic (12 holes) or diatonic (10 holes)
 ```
 # <HarmonicaMoving\>
 ```
