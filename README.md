@@ -94,7 +94,8 @@
     This component displays the current score SVG and draws 
     the cursor at the given current position
 
-    It notifies <App> when user clicked on a note or rest   
+    It notifies <App> onScoreClicked() when user clicked on 
+    a note or rest   
 ```
 # <HarmonicaStatic\>
 ```
