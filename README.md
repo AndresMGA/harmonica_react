@@ -49,7 +49,7 @@
     When <ScoreSVG> is clicked, finds the timestamp of nearest 
     event and passes it to onTimeUpdate(time)
 ```
->### CREATE SUBCOMPONENTS - return ...
+>### SUBCOMPONENTS - return ...
 ```
     <AudioPlayer>
         props | mp3 files
@@ -79,7 +79,7 @@
       - speedChangeHandler
 ```
 
->### CREATE SUBCOMPONENTS - return ...
+>### SUBCOMPONENTS - return ...
 ```
     <AudioTransport> (play, pause, stop buttons)
         props |  playHandler
