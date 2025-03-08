@@ -50,9 +50,13 @@ This component is responsible for following tasks:
             - passes new cursor position to <ScoreSVG>
             - passes new tab to <HarmonicaMoving>
 
-    If stepPlay=True it will trigger <AudioPlayer> play at the 
-    time received and <AudioPlayer> pause at the time of the next
-    note in events.json
+    If stepPlay=True it will:
+        - trigger <AudioPlayer> pauseHandler
+        - reference the harmonica track in <AudioPlayer>
+        - seek to the time received
+        - trigger harmonica track play 
+        - and finally trigger harmonica track pause when 
+          the time of next note in events.json is reached
         
 ```
 
