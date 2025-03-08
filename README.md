@@ -41,7 +41,7 @@ This component is responsible for following tasks:
     item in events.json
 
     If a new event is due:
-        If it is a count in event:
+        If it is a count-in event:
             - passes count to <CountIn> 
             - passes count to <AudioPlayer> 
                 (this is to ensure that metronome can be heard)
