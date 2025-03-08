@@ -21,7 +21,7 @@
 
 ```
 
-**<App>**
+**App**
 
     - Download All Files
     
@@ -66,7 +66,7 @@
             props:
                 current tab
 
-**<AudioPlayer>**
+**AudioPlayer**
     This component plays the mp3 files, and triggers the update function in App every 50ms when playback is active
 
     It has handler fuctions for its subcomponents
@@ -79,27 +79,27 @@
 
     - It creates 2 sub-components
 
-        **<AudioTransport>** (play, pause, stop buttons)
+        **AudioTransport** (play, pause, stop buttons)
             props:
                 playHandler
                 pauseHandler
                 stopHandler
-        **<AudioControls>** (volume and speed controls)
+        **AudioControls** (volume and speed controls)
             props:
                 volumeChangeHandler
                 speedChangeHandler
 
-**<ScoreSVG>**
+**ScoreSVG**
     This component displays the current score SVG and draws the cursor at the given cuurent position
 
     It notifies App when user clicked on a note or rest   
 
-**<HarmonicaStatic>**
+**HarmonicaStatic**
     This function displays the non moving parts of the harmonica
 
     Can be chromatic or diatonic
 
-**<HarmonicaMoving>**
+**HarmonicaMoving**
     This function displays the moving parts of the harmonica
 
     When a new tab is received
