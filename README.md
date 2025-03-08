@@ -34,7 +34,7 @@ This component is responsible for following tasks:
     events.json
     meta.json
 ```
->#### UPDATE STATE - onTimeUpdate(time)...
+>#### UPDATE STATE - onTimeUpdate(time, stepPlay=false)...
 ```
     This function is triggered from <AudioPlayer>
     It receives the current playback time and checks 
@@ -49,6 +49,9 @@ This component is responsible for following tasks:
         If it is a note or rest
             - passes new cursor position to <ScoreSVG>
             - passes new tab to <HarmonicaMoving>
+
+    When stepPlay=True it will trigger <AudioPlayer> pause at the end 
+    of the note event
         
 ```
 
@@ -56,7 +59,9 @@ This component is responsible for following tasks:
 ```
     When <ScoreSVG> is clicked, finds the timestamp of 
     the nearest item in event.json and passes it 
-    to onTimeUpdate(time)
+    to onTimeUpdate(time, stepPlay=true)
+
+    stepPlay is set to True toplay only 1 note
 ```
 >#### SUBCOMPONENTS - return ...
 ```
@@ -64,6 +69,7 @@ This component is responsible for following tasks:
         props | mp3 files
               | onTimeUpdated
               | count
+              | pause
     <ScoreSVG>
         props | svg files
               | current cursor position
