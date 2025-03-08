@@ -59,9 +59,9 @@ This component is responsible for following tasks:
 ```
     When <ScoreSVG> is clicked, finds the timestamp of 
     the nearest item in event.json and passes it 
-    to onTimeUpdate(time, stepPlay=true)
+    to onTimeUpdate(time, stepPlay=True)
 
-    stepPlay is set to True toplay only 1 note
+    stepPlay is set to True to play only 1 note
 ```
 >#### SUBCOMPONENTS - return ...
 ```
