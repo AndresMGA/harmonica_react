@@ -2,7 +2,7 @@
 
 ```
                     +-------------------------------------------------+
-                    |                         App                     |
+                    |              HarmonicaScorePlayer               |
                     |                                                 |
                     +-------------------------------------------------+
                     /                |                 |              \
@@ -20,7 +20,7 @@
    +-------------+   +-------------+   
 
 ```
-# <App\>
+# <HarmonicaScorePlayer\>
 
 >### DOWNLOADS FILES - useEffect()...
 ```
@@ -69,8 +69,8 @@
 ```
     This component uses HTML5's <audio> tag to play the
     mp3 files and passes the current playback time to
-    onTimeUpdate() in <App> every 50 milliseconds when 
-    playback is active.
+    onTimeUpdate() in <HarmonicaScorePlayer> every 50 
+    milliseconds while playback is active.
     
     It has handler fuctions for its subcomponents
       - playHandler
@@ -95,8 +95,8 @@
     This component displays the current score SVG and draws 
     the cursor at the given current position
 
-    It notifies <App> onScoreClicked() when user clicked on 
-    a note or rest   
+    It notifies <HarmonicaScorePlayer> onScoreClicked() when 
+    user clicks on a note or rest   
 ```
 # <HarmonicaStatic\>
 ```
