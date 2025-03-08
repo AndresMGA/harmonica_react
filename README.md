@@ -102,7 +102,8 @@
 ```
     This component displays the non moving parts of the harmonica
 
-    Can be chromatic (12 holes) or diatonic (10 holes)
+    It can be diatonic (10 holes) or chromatic (12 holes and with 
+    an slider icon)
 ```
 # <HarmonicaMoving\>
 ```
