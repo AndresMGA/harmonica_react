@@ -99,13 +99,13 @@
 ```
 # <HarmonicaStatic\>
 ```
-    This function displays the non moving parts of the harmonica
+    This component displays the non moving parts of the harmonica
 
     Can be chromatic (12 holes) or diatonic (10 holes)
 ```
 # <HarmonicaMoving\>
 ```
-    This function displays the moving parts of the harmonica
+    This component displays the moving parts of the harmonica
 
     When a new tab is received
       - updates active hole
