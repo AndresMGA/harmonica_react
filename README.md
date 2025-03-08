@@ -2,7 +2,7 @@
 
 <h2>App</h2>
     <p>Download All Files</p>
-    <ul style="font-size: small;">
+    <ul style="font-color: red;">
       <li>1_harmonica.mp3</li>
       <li>2_accompaniment.mp3</li>
       <li>3_metronome.mp3</li>
