@@ -20,8 +20,7 @@
    +-------------+   +-------------+   
 
 ```
-
-  <h2>App</h2>
+<h2>App</h2>
   <blockquote>
     <p>Download All Files</p>
     <ul>
