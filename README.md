@@ -42,27 +42,27 @@
 >>>- passes new cursor position to ScoreSVG
 >>>- passes new tab to HarmonicaMoving
 
-####Score Clicked Function
+>Score Clicked Function
 
-        When score is clicked, finds time of nearest event and passes its time to the Update Function
+>>When score is clicked, finds time of nearest event and passes its time to the Update Function
 
-####It creates 4 sub-components
+>Create 4 sub-components
 
-        AudioPlayer
-            props:
-                mp3 files
-                onTimeUpdated
-        ScoreSVG
-            props:
-                svg files
-                current cursor position
-                onScoreClicked
-        HarmonicaStatic 
-            props:
-                harmonica type (chromatic or diatonic)
-        HarmonicaMoving
-            props:
-                current tab
+>>- AudioPlayer
+>>>props:
+>>>>- mp3 files
+>>>>- onTimeUpdated
+>>- ScoreSVG
+>>>props
+>>>>-svg files
+>>>>-current cursor position
+>>>>-onScoreClicked
+>>- HarmonicaStatic 
+>>>props
+>>>>-harmonica type (chromatic or diatonic)
+>>- HarmonicaMoving
+>>>props
+>>>>-current tab
 
 ##AudioPlayer
     This component plays the mp3 files, and triggers the update function in App every 50ms when playback is active
