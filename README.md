@@ -44,7 +44,8 @@ This component is responsible for following tasks:
         If it is a count-in event:
             - passes count to <CountIn> 
             - passes count to <AudioPlayer> 
-                (this is to ensure that metronome can be heard)
+                (this is to ensure that metronome can be heard
+                when <CountIn> is displayed)
         If it is a note or rest
             - passes new cursor position to <ScoreSVG>
             - passes new tab to <HarmonicaMoving>
