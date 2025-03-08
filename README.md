@@ -1,5 +1,10 @@
 
 
+<style>
+    li{
+        font-size:small;
+    }
+</style>
 <h2>App</h2>
     <p>Download All Files</p>
     <ul>
