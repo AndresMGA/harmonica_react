@@ -21,7 +21,7 @@
 
 ```
 <h2>App</h2>
-  <blockquote>
+
     <p>Download All Files</p>
     <ul>
       <li>1_harmonica.mp3</li>
@@ -35,7 +35,7 @@
     </ul>
     
     <p>Update Function</p>
-    <blockquote>
+
       <p>This function is triggered by <code>AudioPlayer</code></p>
       <p>Checks current playback time for new events</p>
       <p>If new event is due:</p>
@@ -43,12 +43,12 @@
         <li>passes new cursor position to ScoreSVG</li>
         <li>passes new tab to HarmonicaMoving</li>
       </ul>
-    </blockquote>
+   
     
     <p>Score Clicked Function</p>
-    <blockquote>
+
       <p>When score is clicked, finds time of nearest event and passes its time to the Update Function</p>
-    </blockquote>
+  
 
     <p>Create 4 sub-components</p>
     <ul>
@@ -95,10 +95,10 @@
         </ul>
       </li>
     </ul>
-  </blockquote>
+
 
   <h2>AudioPlayer</h2>
-  <blockquote>
+
     <p>This component plays the mp3 files, and triggers the update function in App every 50ms when playback is active</p>
     <p>It has handler functions for its subcomponents:</p>
     <ul>
@@ -134,26 +134,26 @@
         </ul>
       </li>
     </ul>
-  </blockquote>
+
 
   <h2>ScoreSVG</h2>
-  <blockquote>
+
     <p>This component displays the current score SVG and draws the cursor at the given current position</p>
     <p>It notifies App when user clicked on a note or rest</p>
-  </blockquote>
+
 
   <h2>HarmonicaStatic</h2>
-  <blockquote>
+
     <p>This function displays the non-moving parts of the harmonica</p>
     <p>Can be chromatic or diatonic</p>
-  </blockquote>
+
 
   <h2>HarmonicaMoving</h2>
-  <blockquote>
+
     <p>This function displays the moving parts of the harmonica</p>
     <p>When a new tab is received:</p>
     <ul>
       <li>updates active hole</li>
       <li>updates position of slide</li>
     </ul>
-  </blockquote>
+
