@@ -16,10 +16,9 @@
     </blockquote>
     <blockquote>
     <p>Update Function</p>
-   
-      <p>This function is triggered by <code>AudioPlayer</code></p>
-      <p>Checks current playback time for new events</p>
-      <p>If new event is due:</p>
+    <p>This function is triggered by <code>AudioPlayer</code></p>
+    <p>Checks current playback time for new events</p>
+    <p>If new event is due:</p>
       <ul>
         <li>passes new cursor position to ScoreSVG</li>
         <li>passes new tab to HarmonicaMoving</li>
