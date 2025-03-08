@@ -21,8 +21,8 @@
 
 ```
 
-##App
->####Download All Files
+**App**
+>Download All Files
 >>>1_harmonica.mp3
 >>>2_accompaniment.mp3
 >>>3_metronome.mp3
@@ -32,7 +32,7 @@
 >>>events.json
 >>>meta.json
 
->####Update Function
+>Update Function
 
 >>This function is triggered by <AudioPlayer>
 
