@@ -23,14 +23,14 @@
 
 **App**
 >Download All Files
->>>-1_harmonica.mp3
->>>-2_accompaniment.mp3
->>>-3_metronome.mp3
->>>-score-1.svg
->>>-score-2.svg
->>>-score-3.svg
->>>-events.json
->>>-meta.json
+>>>- 1_harmonica.mp3
+>>>- 2_accompaniment.mp3
+>>>- 3_metronome.mp3
+>>>- score-1.svg
+>>>- score-2.svg
+>>>- score-3.svg
+>>>- events.json
+>>>- meta.json
 
 >Update Function
 
