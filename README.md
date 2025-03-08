@@ -36,8 +36,8 @@
 >### UPDATE STATE - onTimeUpdate(time)...
 ```
     This function is triggered by <AudioPlayer>
-    Checks current playback time for matching event
-    in events.json
+    Checks the current playback time for a matching 
+    event in events.json
 
     If a new event is due:
         - passes new cursor position to <ScoreSVG>
