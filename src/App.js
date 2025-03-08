@@ -95,7 +95,7 @@ function App() {
   }, []); // Empty dependency array → Runs only once when component mounts
 
 let prevTime = 0;
-const handleTimeUpdate = (time) => {
+const onTimeUpdate = (time) => {
 
 
        
@@ -118,7 +118,7 @@ const handleTimeUpdate = (time) => {
 
   return (
     <div>
-      <AudioPlayer audioFiles={audioUrls} onTimeUpdate={handleTimeUpdate}/>
+      <AudioPlayer audioFiles={audioUrls} onTimeUpdate={onTimeUpdate}/>
       <ScoreSVG svgContent={svgText} />
       <ChromaticHarmonica />
       <ChromaticHarmonicaMoving />
