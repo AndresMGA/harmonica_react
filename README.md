@@ -23,7 +23,7 @@
 
 **App**
 >Download All Files
->>- 1_harmonica.mp3
+>>- <small>1_harmonica.mp3</small>
 >>- 2_accompaniment.mp3
 >>- 3_metronome.mp3
 >>- score-1.svg
