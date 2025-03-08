@@ -22,7 +22,7 @@
 ```
 # <App\>
 
->### Download All Files - useEffect()...
+>### DOWNLOAD FILES - useEffect()...
 ```
     1_harmonica.mp3
     2_accompaniment.mp3
@@ -33,7 +33,7 @@
     events.json
     meta.json
 ```
->### Update Function - onTimeUpdate(time)...
+>### UPDATE STATE - onTimeUpdate(time)...
 ```
     This function is triggered by <AudioPlayer>
     Checks current playback time for new events
@@ -42,12 +42,12 @@
         - passes new tab to HarmonicaMoving
 ```
 
->### Score Clicked Function - onScoreClicked(location)...
+>### SCORE CLICKED - onScoreClicked(location)...
 ```
     When <ScoreSVG> is clicked, finds the timestamp of nearest 
     event and passes it to the Update Function
 ```
->### Create sub-components - return ...
+>### CREATE SUBCOMPONENTS - return ...
 ```
     <AudioPlayer>
         props | mp3 files
@@ -75,7 +75,7 @@
       - speedChangeHandler
 ```
 
->### Creates 2 sub-components
+>### CREATE SUBCOMPONENTS - return ...
 ```
     <AudioTransport> (play, pause, stop buttons)
         props |  playHandler
