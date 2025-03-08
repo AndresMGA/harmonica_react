@@ -23,7 +23,7 @@
 ```
 This component is responsible for following tasks:
 ```
->### DOWNLOAD FILES - useEffect()...
+>#### DOWNLOAD REQUIRED FILES - useEffect()...
 ```
     1_harmonica.mp3
     2_accompaniment.mp3
@@ -34,7 +34,7 @@ This component is responsible for following tasks:
     events.json
     meta.json
 ```
->### UPDATE STATE - onTimeUpdate(time)...
+>#### UPDATE STATE - onTimeUpdate(time)...
 ```
     This function is triggered by <AudioPlayer>
     Checks the current playback time for a matching 
@@ -45,13 +45,13 @@ This component is responsible for following tasks:
         - passes new tab to <HarmonicaMoving>
 ```
 
->### HANDLE CLICKS ON SCORE - onScoreClicked(location)...
+>#### HANDLE CLICKS ON SCORE - onScoreClicked(location)...
 ```
     When <ScoreSVG> is clicked, finds the timestamp of 
     the nearest item in event.json and passes it 
     to onTimeUpdate(time)
 ```
->### SUBCOMPONENTS - return ...
+>#### SUBCOMPONENTS - return ...
 ```
     <AudioPlayer>
         props | mp3 files
@@ -81,7 +81,7 @@ This component is responsible for following tasks:
       - speedChangeHandler
 ```
 
->### SUBCOMPONENTS - return ...
+>#### SUBCOMPONENTS - return ...
 ```
     <AudioTransport> (play, pause, stop buttons)
         props |  playHandler
