@@ -139,5 +139,5 @@ This component is responsible for following tasks:
 
     When a new tab is received
       - updates active hole
-      - updates position of slide 
+      - updates position of slider button 
 ``` 
