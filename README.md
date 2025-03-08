@@ -67,7 +67,7 @@
         <li>passes new cursor position to ScoreSVG</li>
         <li>passes new tab to HarmonicaMoving</li>
       </ul>
-    
+    </blockquote>
     
     <p>Score Clicked Function</p>
     
@@ -86,7 +86,7 @@
           </li>
         </ul>
       </li>
-      </blockquote>
+      
 
       <li><b>ScoreSVG</b>
         <ul>
