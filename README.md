@@ -36,8 +36,10 @@
 >### UPDATE STATE - onTimeUpdate(time)...
 ```
     This function is triggered by <AudioPlayer>
-    Checks current playback time for new events
-    If new event is due:
+    Checks current playback time for matching event
+    in events.json
+
+    If a new event is due:
         - passes new cursor position to <ScoreSVG>
         - passes new tab to <HarmonicaMoving>
 ```
