@@ -1,16 +1,16 @@
 
 
 ```
-                    +-------------------------------------------------+
-                    |              HarmonicaScorePlayer               |
-                    |                                                 |
-                    +-------------------------------------------------+
-                    /                |                 |              \
-                  /                  |                 |                \
-            +-------------+   +-------------+   +-------------+   +-------------+ 
-            | AudioPlayer |   |   ScoreSVG  |   |  Harmonica  |   |  Harmonica  |
-            |             |   |             |   |   Static    |   |    Moving   |
-            +-------------+   +-------------+   +-------------+   +-------------+
+                    +--------------------------------------------------------+
+                    |                   HarmonicaScorePlayer                 |
+                    |                                                        |
+                    +--------------------------------------------------------+
+                    /               |            |             |             \
+                  /                 |            |             |               \
+            +-------------+ +------------+ +----------+ +-------------+ +-------------+ 
+            | AudioPlayer | |  ScoreSVG  | | CountIn  | |  Harmonica  | |  Harmonica  |
+            |             | |            | |          | |   Static    | |    Moving   |
+            +-------------+ +------------+ +----------+ +-------------+ +-------------+
               /        \       
             /            \
    +-------------+   +-------------+    
@@ -41,8 +41,12 @@ This component is responsible for following tasks:
     item in events.json
 
     If a new event is due:
-        - passes new cursor position to <ScoreSVG>
-        - passes new tab to <HarmonicaMoving>
+        If it is a count in event:
+            - passes count number to <CountIn>
+        If it is a note or rest
+            - passes new cursor position to <ScoreSVG>
+            - passes new tab to <HarmonicaMoving>
+        
 ```
 
 >#### HANDLE CLICKS ON SCORE - onScoreClicked(location)...
@@ -60,6 +64,8 @@ This component is responsible for following tasks:
         props | svg files
               | current cursor position
               | onScoreClicked
+    <CountIn> 
+        props | count number
     <HarmonicaStatic> 
         props | harmonica type (chromatic or diatonic)
     <HarmonicaMoving>
@@ -99,6 +105,13 @@ This component is responsible for following tasks:
     It notifies <HarmonicaScorePlayer> onScoreClicked() when 
     user clicks on a note or rest   
 ```
+# <CountIn\>
+```
+    This component is only visible in the first few seconds of
+    playback, before any notes or rest events are due.
+
+    When a new count in number is received it is displayed
+``` 
 # <HarmonicaStatic\>
 ```
     This component displays the non moving parts of the harmonica
