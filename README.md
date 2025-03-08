@@ -42,7 +42,7 @@ This component is responsible for following tasks:
 
     If a new event is due:
         If it is a count in event:
-            - passes count number to <CountIn>
+            - passes count to <CountIn>
         If it is a note or rest
             - passes new cursor position to <ScoreSVG>
             - passes new tab to <HarmonicaMoving>
@@ -110,7 +110,13 @@ This component is responsible for following tasks:
     This component is only visible in the first few seconds of
     playback, before any notes or rest events are due.
 
-    When a new count in number is received it is displayed
+    When a new count in number is received it is displayed on top 
+    of <ScoreSVG>
+
+    When a 0 value is received it gets set to invisible.
+    
+    It also ensures that metronome audio track volume is set to 
+    at least 0.5 while a count in is being displayed
 ``` 
 # <HarmonicaStatic\>
 ```
