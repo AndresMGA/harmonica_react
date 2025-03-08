@@ -36,7 +36,7 @@ This component is responsible for following tasks:
 ```
 >#### UPDATE STATE - onTimeUpdate(time)...
 ```
-    This function is triggered by <AudioPlayer>
+    This function is triggered from <AudioPlayer>
     Checks the current playback time for a matching 
     event in events.json
 
