@@ -44,7 +44,7 @@
         - passes new tab to <HarmonicaMoving>
 ```
 
->### HANDLES SCORE CLICKS - onScoreClicked(location)...
+>### HANDLES CLICKS ON SCORE - onScoreClicked(location)...
 ```
     When <ScoreSVG> is clicked, finds the timestamp of 
     the nearest item in event.json and passes it 
