@@ -21,7 +21,7 @@
 ```
 # <HarmonicaScorePlayer\>
 ```
-    This component is responsible for following tasks...
+    This component is responsible for following tasks:
 ```
 >### DOWNLOAD FILES - useEffect()...
 ```
