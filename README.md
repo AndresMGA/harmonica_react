@@ -1,23 +1,27 @@
 
 
 ```
-                    +--------------------------------------------------------+
-                    |                   HarmonicaScorePlayer                 |
-                    |                                                        |
-                    +--------------------------------------------------------+
-                    /             |             |              |             \
-                  /               |             |              |               \
-            +-------------+ +------------+ +----------+ +-------------+ +-------------+ 
-            | AudioPlayer | |  ScoreSVG  | | CountIn  | |  Harmonica  | |  Harmonica  |
-            |             | |            | |          | |   Static    | |    Moving   |
-            +-------------+ +------------+ +----------+ +-------------+ +-------------+
-              /        \       
-            /            \
-    +------------+ +-------------+    
-    |   Audio    | |    Audio    |   
-    | Transport  | |   Controls  |   
-    +------------+ +-------------+   
-
++-------------------------------------------------------------------------------------+
+|                                                                                     |
+|                             HarmonicaScorePlayerContext                             |
+|                                                                                     |
+|                 +--------------------------------------------------------+          |
+|                 |                   HarmonicaScorePlayer                 |          |
+|                 |                                                        |          |
+|                 +--------------------------------------------------------+          |   
+|                 /             |             |              |             \          |
+|               /               |             |              |               \        |
+|         +-------------+ +------------+ +----------+ +-------------+ +-------------+ |
+|         | AudioPlayer | |  ScoreSVG  | | CountIn  | |  Harmonica  | |  Harmonica  | |
+|         |             | |            | |          | |   Static    | |    Moving   | |
+|         +-------------+ +------------+ +----------+ +-------------+ +-------------+ |
+|           /        \                                                                |
+|         /            \                                                              |        
+| +------------+ +-------------+                                                      |        
+| |   Audio    | |    Audio    |                                                      |        
+| | Transport  | |   Controls  |                                                      |            
+| +------------+ +-------------+                                                      |
++-------------------------------------------------------------------------------------+
 ```
 # <HarmonicaScorePlayer\>
 ```
@@ -51,9 +55,9 @@ This component is responsible for following tasks:
             - passes new tab to <HarmonicaMoving>
 
     If stepPlay=True it will:
-        - trigger <AudioPlayer> pauseHandler
+        - trigger <AudioPlayer> pauseHandler to pause all tracks
         - reference the harmonica track in <AudioPlayer>
-        - seek to the time received
+        - seek harmonica track to the time received
         - trigger harmonica track play 
         - and finally trigger harmonica track pause when 
           the time of next note in events.json is reached
