@@ -3,7 +3,7 @@ import { AppContext } from "./Context";
 
 
 const ScoreSVG = () => {
-  const {svgs,svgPage,setImgElement} = useContext(AppContext); 
+  const {svg,setImgElement} = useContext(AppContext); 
   const imgRef = useRef(null)
   
   useEffect(() => {
@@ -13,7 +13,7 @@ const ScoreSVG = () => {
   }, [])
 
   return (
-    <img ref={imgRef} src={svgs[svgPage]}  alt="SVG" style={{ width: "100%", height: "auto" }} />
+    <img ref={imgRef} src={svg}  alt="SVG" style={{ width: "100%", height: "auto" }} />
   );
 };
 

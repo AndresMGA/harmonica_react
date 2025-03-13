@@ -27,6 +27,7 @@ export function AppProvider({ children }) {
   ]);
 
   const [svgs, setSVGs] = useState([]);
+  const [svg, setSVG] = useState(null);
   const [svgPage, setSVGPage] = useState(0);
   const [svgRect, setSVGRect] = useState({});
   const [svgScale, setSVGScale] = useState({});
@@ -51,6 +52,7 @@ export function AppProvider({ children }) {
     });
 
     setEvent(events[0]);
+    setSVGPage(0);
     setIsPlaying(false);
   };
 
@@ -79,6 +81,10 @@ export function AppProvider({ children }) {
     if (event.tabs) setTab(event.tabs);
     if (event.page) setSVGPage(event.page);
     if (event.x) updateCursor();
+    else {
+      event.w=event.h=event.x=event.y=0;
+      updateCursor();
+    }
   }, [event]);
 
   useEffect(() => {
@@ -88,6 +94,11 @@ export function AppProvider({ children }) {
       })
     );
   }, [mp3s]);
+
+  useEffect(() => {
+    setSVG(svgs[svgPage]);
+  }, [svgPage,svgs]);
+
 
   /* This function runs if we didn´t find an event where expected,
     it should not get called often */
@@ -243,26 +254,28 @@ export function AppProvider({ children }) {
   return (
     <AppContext.Provider
       value={{
+        /* Shared with <HarmonicaScorePlayer> */
         setEvents,
         setMP3s,
         setSVGs,
-
-        cursorPosition,
-        tab,
+        /* Shared with <AudioTransport> */
+        handlePlay,
+        handlePause,
+        handleStop,
+        /* Shared with <AudioControls> */
+        handleVolumeChange,
+        handleSpeedChange,
         speed,
         setSpeed,
         volumes,
         setVolumes,
-        handlePlay,
-        handlePause,
-        handleStop,
-        handleVolumeChange,
-        handleSpeedChange,
-
-        svgs,
-        svgPage,
-        setSVGPage,
+        /* Shared with <HarmonicaMoving> */
+        tab,
+        /* Shared with <ScoreSVG> */
+        svg,
         setImgElement,
+        /* Shared with <ScoreCursor> */
+        cursorPosition,
       }}
     >
       {children}
