@@ -1,8 +1,8 @@
 import React, { useEffect, useContext } from 'react';
 
-import './ChromaticHarmonica.css';
+import './Harmonica.css';
 
-const ChromaticHarmonica = () => {
+const HarmonicaStatic = () => {
 
 
   return (
@@ -46,4 +46,4 @@ const ChromaticHarmonica = () => {
   );
 };
 
-export default ChromaticHarmonica;
+export default HarmonicaStatic;

@@ -1,8 +1,8 @@
 import React, { useEffect, useContext } from 'react';
 import { AppContext } from "./Context"; // Import context
-import './ChromaticHarmonica.css';
+import './Harmonica.css';
 
-const ChromaticHarmonicaMoving = () => {
+const HarmonicaMoving = () => {
 
   const { tab } = useContext(AppContext);
 
@@ -101,4 +101,4 @@ const ChromaticHarmonicaMoving = () => {
   );
 };
 
-export default ChromaticHarmonicaMoving;
+export default HarmonicaMoving;
