@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
-import { AppContext } from "./Context";
+import { AppContext } from "./AppContext";
 
 
 const ScoreSVG = () => {

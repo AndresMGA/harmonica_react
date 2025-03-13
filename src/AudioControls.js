@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
-import { AppContext } from "./Context"; // Import context
+import { AppContext } from "./AppContext"; // Import context
 
 
 const AudioControls = () => {

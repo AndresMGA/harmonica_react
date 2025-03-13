@@ -1,6 +1,6 @@
 // AudioTransport.js
 import React, { useState, useRef, useEffect, useContext } from "react";
-import { AppContext } from "./Context"; // Import context
+import { AppContext } from "./AppContext"; // Import context
 
 const AudioTransport = () => {
     const {handlePlay,handlePause,handleStop} = useContext(AppContext); // Use context

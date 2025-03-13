@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from 'react';
-import { AppContext } from "./Context"; // Import context
+import { AppContext } from "./AppContext"; // Import context
 import './Harmonica.css';
 
 const HarmonicaMoving = () => {
