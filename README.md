@@ -1,23 +1,6 @@
 
 ![Alt text](harmonica.svg)
-```
-                    +-----------------------------------------------------+
-                    |                 HarmonicaScorePlayer                |
-                    |                                                     |
-                    +-----------------------------------------------------+
-                     /                       |                           \   
-                   /                         |                             \ 
-        +-------------+           +----------------------+             +-----------+ 
-        | AudioPlayer |           |        Score         |             | Harmonica | 
-        |             |           |                      |             |           | 
-        +-------------+           +----------------------+             +-----------+ 
-           /       \                /        |         \                /         \         
-         /           \            /          |           \            /             \       
-+-----------+ +----------+ +----------+ +---------+ +---------+ +-----------+ +-----------+
-|   Audio   | |  Audio   | |  Score   | |  Score  | |  Score  | | Harmonica | | Harmonica |
-| Transport | | Controls | |   SVG    | | Cursor  | | CountIn | |  Static   | |  Moving   |
-+-----------+ +----------+ +----------+ +---------+ +---------+ +-----------+ +-----------+
-```
+
 # <HarmonicaScorePlayer\>
 ```
 This component is responsible for following tasks:
