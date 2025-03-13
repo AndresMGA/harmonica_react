@@ -1,5 +1,5 @@
 
-
+![Alt text](harmonica.svg)
 ```
                     +-----------------------------------------------------+
                     |                 HarmonicaScorePlayer                |
