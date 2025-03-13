@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
+import { AppContext } from "./Context"; // Import context
 
-const volumeLabels = ["Harmonica", "Accompaniment", "Metronome"]; 
-const AudioControls = ({ volumes, speed, onVolumeChange, onSpeedChange }) => {
+
+const AudioControls = () => {
+
+    const { 
+      speed, 
+      volumes,
+      handleVolumeChange,handleSpeedChange
+    } = useContext(AppContext); 
+
+    const volumeLabels = ["Harmonica", "Accompaniment", "Metronome"]; 
 
   return (
     <div className="audio-controls">
@@ -17,7 +26,7 @@ const AudioControls = ({ volumes, speed, onVolumeChange, onSpeedChange }) => {
               max="1"
               step="0.01"
               value={volumes[key] || 1} 
-              onChange={(e) => onVolumeChange(parseInt(key), parseFloat(e.target.value))}
+              onChange={(e) => handleVolumeChange(parseInt(key), parseFloat(e.target.value))}
             />
             <label>{`${volumeLabels[parseInt(key)]}`}</label>
           </div>
@@ -32,7 +41,7 @@ const AudioControls = ({ volumes, speed, onVolumeChange, onSpeedChange }) => {
           max="2"
           step="0.1"
           value={speed}
-          onChange={(e) => onSpeedChange(parseFloat(e.target.value))}
+          onChange={(e) => handleSpeedChange(parseFloat(e.target.value))}
         />
         <label>Speed</label>
       </div>

@@ -1,5 +1,4 @@
 import React, { useEffect, useContext } from 'react';
-
 import './Harmonica.css';
 
 const HarmonicaStatic = () => {

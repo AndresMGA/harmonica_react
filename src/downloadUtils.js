@@ -18,9 +18,9 @@ export const listFiles = async () => {
       // Filter files
       const svgs = data.filter(file => file.name.endsWith('.svg')).map(file => file.name);
       const mp3s = data.filter(file => file.name.endsWith('.mp3')).map(file => file.name);
-      const pngs = data.filter(file => file.name.endsWith('.png')).map(file => file.name);
+
       
-      return [mp3s, svgs, pngs];
+      return [mp3s, svgs];
     } catch (error) {
         return 'Error fetching file list:' + error;
       
@@ -102,7 +102,7 @@ export const listFiles = async () => {
   };
   
   export const downloadAll = async (setMP3s,setSVGs,setEvents) => {
-    const [mp3Files, svgFiles,pngFiles] = await listFiles();
+    const [mp3Files, svgFiles] = await listFiles();
     setMP3s(await downloadMp3s(mp3Files));
     setSVGs(await downloadSVGs(svgFiles))
     let eventsWithoutIndex = await downloadEvents();
@@ -110,7 +110,7 @@ export const listFiles = async () => {
         ...event,  // Spread existing event properties
         idx: index // Add new idx field
       }));
-      console.log(eventsWithIndex)
+    
     setEvents(eventsWithIndex);
   };
   
