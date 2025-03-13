@@ -1,5 +1,5 @@
 
-![Alt text](harmonica.svg)
+<img src="harmonia.svg" width="200">
 
 # <HarmonicaScorePlayer\>
 ```
