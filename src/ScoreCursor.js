@@ -1,6 +1,6 @@
 
-import React, { useContext, useEffect, useRef, useState } from "react";
-import { AppContext } from "./Context";
+import React, {useContext} from "react";
+import { AppContext } from "./AppContext";
 const ScoreCursor = () => {
     const {cursorPosition} = useContext(AppContext); // Get cursor state from context
   return (

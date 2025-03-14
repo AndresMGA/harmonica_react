@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-
+import { downloadAll } from "./AppContextDownload"; // Import utility functions
 export const AppContext = createContext();
 
 export function AppProvider({ children }) {
@@ -31,7 +31,11 @@ export function AppProvider({ children }) {
   const [svgPage, setSVGPage] = useState(0);
   const [svgRect, setSVGRect] = useState({});
   const [svgScale, setSVGScale] = useState({});
-  const [imgElement, setImgElement] = useState(null);
+  const [svgElement, setSVGElement] = useState(null);
+
+  const downloadFiles= () => {
+    downloadAll(setMP3s,setSVGs,setEvents);
+  };
 
   /* Handle Play */
   const handlePlay = () => {
@@ -134,7 +138,7 @@ export function AppProvider({ children }) {
   useEffect(() => {
     if (isPlaying) {
       setTimeout(() => {
-        if (!event) event = findNearest(time);
+        if (!event) setEvent(findNearest(time));
 
         const time = audioTracks[0] ? audioTracks[0].currentTime : 0;
 
@@ -170,9 +174,9 @@ export function AppProvider({ children }) {
 
   /* Update Cursor location accounting for <ScoreSVG> position and scaling */
   function updateCursor() {
-    if (!imgElement) return;
+    if (!svgElement) return;
 
-    const rect = imgElement.getBoundingClientRect();
+    const rect = svgElement.getBoundingClientRect();
     const renderedWidth = rect.width;
     const renderedHeight = rect.height;
 
@@ -201,9 +205,9 @@ export function AppProvider({ children }) {
     });
   }
 
-  /* Update Cursor if imgElement coordinates change */
+  /* Update Cursor if svgElement coordinates change */
   useEffect(() => {
-    if (imgElement) {
+    if (svgElement) {
       window.addEventListener("resize", updateCursor);
       window.addEventListener("scroll", updateCursor);
       window.addEventListener("wheel", updateCursor);
@@ -218,7 +222,7 @@ export function AppProvider({ children }) {
       window.removeEventListener("mousemove", updateCursor);
       window.removeEventListener("touchmove", updateCursor);
     };
-  }, [imgElement]);
+  }, [svgElement]);
 
   /* Prevents user zoom */
   useEffect(() => {
@@ -255,9 +259,7 @@ export function AppProvider({ children }) {
     <AppContext.Provider
       value={{
         /* Shared with <HarmonicaScorePlayer> */
-        setEvents,
-        setMP3s,
-        setSVGs,
+        downloadFiles,
         /* Shared with <AudioTransport> */
         handlePlay,
         handlePause,
@@ -266,14 +268,12 @@ export function AppProvider({ children }) {
         handleVolumeChange,
         handleSpeedChange,
         speed,
-        setSpeed,
         volumes,
-        setVolumes,
         /* Shared with <HarmonicaMoving> */
         tab,
         /* Shared with <ScoreSVG> */
         svg,
-        setImgElement,
+        setSVGElement,
         /* Shared with <ScoreCursor> */
         cursorPosition,
       }}

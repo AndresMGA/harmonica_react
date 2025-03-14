@@ -1,19 +1,19 @@
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import { AppContext } from "./AppContext";
 
 
 const ScoreSVG = () => {
-  const {svg,setImgElement} = useContext(AppContext); 
-  const imgRef = useRef(null)
+  const {svg,setSVGElement} = useContext(AppContext); 
+  const svgRef = useRef(null)
   
   useEffect(() => {
-    if (imgRef.current) {
-      setImgElement(imgRef.current); 
+    if (svgRef.current) {
+      setSVGElement(svgRef.current); 
     }
   }, [])
 
   return (
-    <img ref={imgRef} src={svg}  alt="SVG" style={{ width: "100%", height: "auto" }} />
+    <img ref={svgRef} src={svg}  alt="SVG" style={{ width: "100%", height: "auto" }} />
   );
 };
 

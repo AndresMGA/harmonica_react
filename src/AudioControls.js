@@ -7,7 +7,8 @@ const AudioControls = () => {
     const { 
       speed, 
       volumes,
-      handleVolumeChange,handleSpeedChange
+      handleVolumeChange,
+      handleSpeedChange
     } = useContext(AppContext); 
 
     const volumeLabels = ["Harmonica", "Accompaniment", "Metronome"]; 
