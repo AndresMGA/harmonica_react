@@ -5,7 +5,7 @@ import AudioControls from "./AudioControls";
 const AudioPlayer = () => {
 
 return (
-    <div >
+    <div>
       <AudioTransport/>
       <AudioControls/>
     </div>

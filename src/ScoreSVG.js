@@ -13,7 +13,13 @@ const ScoreSVG = () => {
   }, [])
 
   return (
-    <img ref={svgRef} src={svg}  alt="SVG" style={{ width: "100%", height: "auto" }} />
+    <img ref={svgRef} src={svg}  alt="SVG" 
+    style={{ 
+      position:"fixed",
+      left:"50%",
+      top:"0px",
+      width: "50%",
+     height: "auto" }} />
   );
 };
 

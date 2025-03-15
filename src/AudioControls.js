@@ -14,7 +14,13 @@ const AudioControls = () => {
     const volumeLabels = ["Harmonica", "Accompaniment", "Metronome"]; 
 
   return (
-    <div className="audio-controls">
+    <div     
+      style={{ 
+      position:"fixed",
+      right:"10px",
+      bottom:"10px",
+      color:"#ffffff"
+    }}>
       <div className="volume-control">
         
         {/* Volume controls for each audio file */}

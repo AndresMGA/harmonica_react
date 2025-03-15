@@ -15,7 +15,7 @@ const HarmonicaCanvas = () => {
   const slideColor = "yellow";
   const bendColor = "red";
   const textColor = "#cccccc"
-  const scale = 1;
+  const scale = .8;
 
   const drawScaledText = (text, x, y,font,fontSize,color,align,bold=false) => {
     const gl = glRef.current;
@@ -202,7 +202,7 @@ const HarmonicaCanvas = () => {
         slideColor,
         item.border ? 2 : 0
       ); // Front
-     drawScaledText(item.text,legendOffset + item.x + 20,114,"Arial, Helvetica, sans-serif",16,emptyColor,"left",true)
+     drawScaledText(item.text,legendOffset + item.x + 20,114,"Arial, Helvetica, sans-serif",16,textColor,"left",true)
     });
 
     drawScaledSlide(64 + nHoles * 54, 28, false);

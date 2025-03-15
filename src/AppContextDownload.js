@@ -100,11 +100,42 @@ export const listFiles = async () => {
       return "Error downloading events:" + error;
     }
   };
+
+  export const downloadVideo = async () => {
+    try {
+      const response = await fetch(`${githubApiBase}video.mp4`, {
+        headers: {
+          Authorization: `token ${token}`,
+         Accept: "application/vnd.github.v3.raw",
+        },
+      });
+      if (!response.ok) {
+        console.warn("No video present");
+        return;
+      }
   
-  export const downloadAll = async (setMP3s,setSVGs,setEvents) => {
+      const videoBlob = await response.blob();
+      console.log("Original Blob Type:", videoBlob.type); // Debugging
+  
+      // Force correct MIME type
+      const fixedBlob = new Blob([videoBlob], { type: "video/mp4" });
+  
+      const blobSizeMB = (fixedBlob.size / (1024 * 1024)).toFixed(2);
+      console.log("Fixed Blob size:", blobSizeMB, "MB");
+      console.log("Fixed Blob Type:", fixedBlob.type);
+  
+      const videoUrl = URL.createObjectURL(fixedBlob);
+      return videoUrl;
+    } catch (error) {
+      return "Error downloading video:" + error;
+    }
+  };
+  
+  export const downloadAll = async (setMP3s,setSVGs,setEvents,setVideo) => {
     const [mp3Files, svgFiles] = await listFiles();
     setMP3s(await downloadMp3s(mp3Files));
-    setSVGs(await downloadSVGs(svgFiles))
+    setSVGs(await downloadSVGs(svgFiles));
+    setVideo(await downloadVideo());
     let eventsWithoutIndex = await downloadEvents();
     const eventsWithIndex = eventsWithoutIndex.map((event, index) => ({
         ...event,  // Spread existing event properties
@@ -112,5 +143,6 @@ export const listFiles = async () => {
       }));
     
     setEvents(eventsWithIndex);
+    
   };
   

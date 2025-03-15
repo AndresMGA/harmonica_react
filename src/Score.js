@@ -6,7 +6,7 @@ const Score = () => {
 
 
   return (
-    <div style={{ width: "100%", height: "auto" }}>
+    <div>
       <ScoreSVG />
       <ScoreCursor />
     </div>

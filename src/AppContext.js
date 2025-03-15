@@ -13,7 +13,9 @@ export function AppProvider({ children }) {
   const [nHoles, setNHoles] = useState(12);
 
   const [mp3s, setMP3s] = useState([]);
+  const [video, setVideo] = useState(null);
   const [audioTracks, setAudioTracks] = useState([null, null, null]);
+  const [videoTrack, setVideoTrack] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [timerInterval, setTimerInterval] = useState(50);
   const [timerTick, setTimerTick] = useState(false);
@@ -34,17 +36,20 @@ export function AppProvider({ children }) {
   const [svgElement, setSVGElement] = useState(null);
 
   const downloadFiles= () => {
-    downloadAll(setMP3s,setSVGs,setEvents);
+    downloadAll(setMP3s,setSVGs,setEvents,setVideo);
   };
 
   /* Handle Play */
   const handlePlay = () => {
     audioTracks.forEach((audioTrack) => audioTrack?.play());
+
+    if(videoTrack)videoTrack.play()
     setIsPlaying(true);
   };
   /* Handle Pause */
   const handlePause = () => {
     audioTracks.forEach((audioTrack) => audioTrack?.pause());
+    if(videoTrack)videoTrack.pause()
     setIsPlaying(false);
   };
 
@@ -54,6 +59,11 @@ export function AppProvider({ children }) {
       if (audioTrack) audioTrack.pause();
       audioTrack.currentTime = 0;
     });
+
+    if(videoTrack){
+      videoTrack.pause()
+      videoTrack.currentTime=0;
+    }
 
     setEvent(events[0]);
     setSVGPage(0);
@@ -278,6 +288,8 @@ export function AppProvider({ children }) {
         setSVGElement,
         /* Shared with <ScoreCursor> */
         cursorPosition,
+        video,setVideo,
+        setVideoTrack
       }}
     >
       {children}
