@@ -4,6 +4,7 @@ import { AppContext } from "./AppContext"; // Import context
 import AudioPlayer from "./AudioPlayer";
 import Score from "./Score";
 import Harmonica from "./Harmonica";
+//import CountIn from "./CountIn";
 
 
 function HarmonicaScorePlayer() {
