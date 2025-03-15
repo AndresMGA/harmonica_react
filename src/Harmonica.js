@@ -1,15 +1,22 @@
-import React, { useEffect, useContext } from 'react';
-import HarmonicaStatic from "./HarmonicaStatic";
-import HarmonicaMoving from "./HarmonicaMoving";
+import React from "react";
 
+import HarmonicaCanvas from "./HarmonicaCanvas";
 
 const Harmonica = () => {
-
+  
 
   return (
-    <div>
-      <HarmonicaStatic />
-      <HarmonicaMoving />
+    <div
+      style={{
+        position: "fixed",
+        bottom: "0px",
+        left: "50%",
+        transform: "translateX(-50%)",
+      }}
+    >
+      <HarmonicaCanvas/>
+
+     
     </div>
   );
 };

@@ -10,7 +10,7 @@ export function AppProvider({ children }) {
     height: 0,
   });
   const [tab, setTab] = useState("");
-  const [htype, setHtype] = useState("");
+  const [nHoles, setNHoles] = useState(12);
 
   const [mp3s, setMP3s] = useState([]);
   const [audioTracks, setAudioTracks] = useState([null, null, null]);
@@ -269,6 +269,8 @@ export function AppProvider({ children }) {
         handleSpeedChange,
         speed,
         volumes,
+        /* Shared with <Harmonica> */
+        nHoles,
         /* Shared with <HarmonicaMoving> */
         tab,
         /* Shared with <ScoreSVG> */

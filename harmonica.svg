@@ -24,9 +24,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.25823823"
-     inkscape:cx="772.54248"
-     inkscape:cy="505.34734"
+     inkscape:zoom="0.73040801"
+     inkscape:cx="358.70362"
+     inkscape:cy="985.06587"
      inkscape:window-width="1302"
      inkscape:window-height="699"
      inkscape:window-x="58"
@@ -42,10 +42,10 @@
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:5;stroke-dasharray:none;stroke-opacity:1"
        id="rect113"
-       width="104.32659"
-       height="256.67017"
-       x="6.2155771"
-       y="32.486488"
+       width="107.6339"
+       height="233.4388"
+       x="5.6124659"
+       y="33.366222"
        ry="0" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
@@ -88,9 +88,9 @@
        transform="matrix(1.281739,0,0,1.3906459,-13.602592,8.4958827)"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1811">&lt;<tspan
+         id="tspan601">&lt;<tspan
    style="font-size:6.26413px"
-   id="tspan1809">HarmonicaScorePlayer</tspan>&gt;</tspan></text>
+   id="tspan599">HarmonicaScorePlayer</tspan>&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:0.934074;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -100,7 +100,7 @@
        transform="matrix(1.3130685,0,0,1.5379177,14.607821,36.821258)"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1813">&lt;AudioPlayer&gt;</tspan></text>
+         id="tspan603">&lt;AudioPlayer&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:0.934074;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -110,7 +110,7 @@
        transform="matrix(1.3130685,0,0,1.5379177,14.702062,112.12123)"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1815">&lt;Score&gt;</tspan></text>
+         id="tspan605">&lt;Score&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.96502px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:0.934074;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -120,15 +120,16 @@
        transform="matrix(1.3130685,0,0,1.5379177,34.985206,55.066725)"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1817">&lt;AudioTransport&gt;</tspan></text>
+         id="tspan607">&lt;AudioTransport&gt;</tspan></text>
     <rect
        style="fill:#c0c0c0;fill-opacity:0.89708;stroke:#000000;stroke-width:0.103491;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
        id="rect3352"
        width="71.401405"
-       height="259.45609"
+       height="238.58224"
        x="131.51913"
        y="29.989222"
-       ry="0.42778167" />
+       ry="0.42778167"
+       rx="0.42778167" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -140,7 +141,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1819">downloadFiles()</tspan></text>
+         id="tspan609">downloadFiles()</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -152,7 +153,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1821">svg</tspan></text>
+         id="tspan611">svg</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -164,7 +165,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1823">setSVGElement()</tspan></text>
+         id="tspan613">setSVGElement()</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -176,7 +177,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1825">handleScoreClick()</tspan></text>
+         id="tspan615">handleScoreClick()</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -188,7 +189,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1827">handlePlay()</tspan></text>
+         id="tspan617">handlePlay()</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -200,7 +201,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1829">handleSpeedChange()</tspan></text>
+         id="tspan619">handleSpeedChange()</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -212,7 +213,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1831">handleVolumeChange()</tspan></text>
+         id="tspan621">handleVolumeChange()</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -224,7 +225,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1833">volumes[ ]</tspan></text>
+         id="tspan623">volumes[ ]</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -236,7 +237,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1835">speed</tspan></text>
+         id="tspan625">speed</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -248,7 +249,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1837">handlePause()</tspan></text>
+         id="tspan627">handlePause()</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -260,7 +261,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1839">handleStop()</tspan></text>
+         id="tspan629">handleStop()</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.96502px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:0.934074;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -270,30 +271,22 @@
        transform="matrix(1.3130685,0,0,1.5379177,36.908552,78.219415)"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1841">&lt;AudioControls&gt;</tspan></text>
+         id="tspan631">&lt;AudioControls&gt;</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:3;stroke-dasharray:none;stroke-opacity:1"
        id="rect113-3-1"
        width="61.54483"
-       height="52.864548"
+       height="37.902596"
        x="36.651592"
        y="216.80318"
-       ry="0" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
-       id="rect113-3-9-0-9"
-       width="68.589256"
-       height="12.797444"
-       x="52.295303"
-       y="233.51372"
        ry="0" />
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
        id="rect113-3-9-6-4"
        width="68.668701"
        height="13.836993"
-       x="52.361095"
-       y="249.79411"
+       x="50.871212"
+       y="234.88553"
        ry="0" />
     <text
        xml:space="preserve"
@@ -304,27 +297,17 @@
        transform="matrix(1.3130685,0,0,1.5379177,15.940464,187.52335)"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1843">&lt;Harmonica&gt;</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.96502px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:0.934074;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       x="19.08116"
-       y="25.695816"
-       id="text2890-2-8-4"
-       transform="matrix(1.3130685,0,0,1.5379177,32.567858,203.1525)"><tspan
-         x="19.08116"
-         y="25.695816"
-         id="tspan1845">&lt;HarmonicaStatic&gt;</tspan></text>
+         id="tspan633">&lt;Harmonica&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.96502px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:0.934074;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        x="19.08116"
        y="25.695816"
        id="text2890-2-8-9-5"
-       transform="matrix(1.3130685,0,0,1.5379177,29.768193,219.51988)"><tspan
+       transform="matrix(1.3130685,0,0,1.5379177,29.217472,204.46545)"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1847">&lt;HarmonicaMoving&gt;</tspan></text>
+         id="tspan635">&lt;HarmonicaCanvas&gt;</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
        id="rect113-3-9-0-3"
@@ -350,7 +333,7 @@
        transform="matrix(1.3130685,0,0,1.5379177,39.007322,125.30453)"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1849">&lt;ScoreSVG&gt;</tspan></text>
+         id="tspan637">&lt;ScoreSVG&gt;</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.96502px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:0.934074;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -360,7 +343,7 @@
        transform="matrix(1.3130685,0,0,1.5379177,39.609672,142.72143)"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1851">&lt;ScoreCursor&gt;</tspan></text>
+         id="tspan639">&lt;ScoreCursor&gt;</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-dasharray:none;stroke-opacity:1"
        id="rect113-3-9-6-6-9"
@@ -378,7 +361,7 @@
        transform="matrix(1.3130685,0,0,1.5379177,39.729104,160.27542)"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1853">&lt;ScoreCountIn&gt;</tspan></text>
+         id="tspan641">&lt;ScoreCountIn&gt;</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
        id="rect113-3-9-0-5-6"
@@ -398,7 +381,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1855">cursorPosition</tspan></text>
+         id="tspan643">cursorPosition</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
        id="rect113-3-9-0-5-6-3"
@@ -421,39 +404,31 @@
        x="19.08116"
        y="25.695816"
        id="text2890-2-8-0-3-15-5-9-2"
-       transform="matrix(1.3130685,0,0,1.5379177,120.65651,202.46316)"
+       transform="matrix(1.3130685,0,0,1.5379177,119.49576,205.89177)"
        inkscape:transform-center-x="8.3160339"
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1857">harmonicaType</tspan></text>
-    <rect
-       style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.231626;stroke-dasharray:none;stroke-opacity:1"
-       id="rect113-3-9-0-5-6-3-54"
-       width="37.650608"
-       height="8.3450089"
-       x="143.41942"
-       y="235.99144"
-       ry="0" />
+         id="tspan645">nHoles</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.47551px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:59.6615;display:inline;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        x="19.08116"
        y="25.695816"
        id="text2890-2-8-0-3-15-5-9-2-7"
-       transform="matrix(1.3130685,0,0,1.5379177,120.91554,218.99561)"
+       transform="matrix(1.3130685,0,0,1.5379177,120.14138,212.2107)"
        inkscape:transform-center-x="8.3160339"
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1859">tab</tspan></text>
+         id="tspan647">tab</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.136031;stroke-dasharray:none;stroke-opacity:1"
        id="rect113-3-9-0-5-6-3-54-4"
-       width="12.838786"
-       height="8.4406042"
-       x="143.63066"
-       y="252.47609"
+       width="21.670675"
+       height="16.46204"
+       x="142.42477"
+       y="238.05722"
        ry="0" />
     <text
        xml:space="preserve"
@@ -466,7 +441,7 @@
        inkscape:transform-center-y="-8.4210148"><tspan
          x="19.08116"
          y="25.695816"
-         id="tspan1861">count</tspan></text>
+         id="tspan649">count</tspan></text>
     <rect
        style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
        id="rect113-3-9-0-5-6-3-5"
@@ -539,9 +514,9 @@
     <rect
        style="fill:#010101;fill-opacity:0.962811;fill-rule:nonzero;stroke:#000000;stroke-width:1.61906;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4925"
-       width="24.413219"
+       width="20.129391"
        height="2.3509979"
-       x="109.09511"
+       x="113.37894"
        y="49.948765" />
     <path
        sodipodi:type="star"
@@ -721,31 +696,6 @@
     <path
        sodipodi:type="star"
        style="fill:#010101;fill-opacity:0.962811;fill-rule:nonzero;stroke:#000000;stroke-width:1.299;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="path4871-6-2-6-0-1"
-       inkscape:flatsided="false"
-       sodipodi:sides="3"
-       sodipodi:cx="115.64226"
-       sodipodi:cy="-17.833433"
-       sodipodi:r1="9.049242"
-       sodipodi:r2="4.4915333"
-       sodipodi:arg1="2.0787716"
-       sodipodi:arg2="2.991352"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="m 111.24062,-9.9268286 -0.0393,-7.2343294 -0.20557,-8.437505 6.28477,3.583128 7.40988,4.040727 -6.24547,3.651201 z"
-       inkscape:transform-center-x="-0.22791227"
-       inkscape:transform-center-y="-0.10886432"
-       transform="matrix(-0.49496569,0,0,-0.47823557,184.15161,231.40937)" />
-    <rect
-       style="fill:#010101;fill-opacity:0.962811;fill-rule:nonzero;stroke:#000000;stroke-width:1.30058;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       id="rect4925-8-6-4-4-72"
-       width="14.414244"
-       height="2.5694194"
-       x="128.45683"
-       y="238.76532" />
-    <path
-       sodipodi:type="star"
-       style="fill:#010101;fill-opacity:0.962811;fill-rule:nonzero;stroke:#000000;stroke-width:1.299;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="path4871-6-2-6-0-7"
        inkscape:flatsided="false"
        sodipodi:sides="3"
@@ -760,14 +710,14 @@
        d="m 111.24062,-9.9268286 -0.0393,-7.2343294 -0.20557,-8.437505 6.28477,3.583128 7.40988,4.040727 -6.24547,3.651201 z"
        inkscape:transform-center-x="-0.22791227"
        inkscape:transform-center-y="-0.10886432"
-       transform="matrix(-0.49496569,0,0,-0.47823557,184.31255,248.03633)" />
+       transform="matrix(-0.49496569,0,0,-0.47823557,183.10666,233.61747)" />
     <rect
        style="fill:#010101;fill-opacity:0.962811;fill-rule:nonzero;stroke:#000000;stroke-width:1.30058;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        id="rect4925-8-6-4-4-2"
        width="14.414244"
        height="2.5694194"
-       x="128.61778"
-       y="255.39229" />
+       x="127.41189"
+       y="240.97343" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.87778px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;inline-size:112.662;display:inline;fill:#010101;fill-opacity:0.962811;fill-rule:nonzero;stroke:#000000;stroke-width:1.299;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0"
@@ -777,11 +727,11 @@
        transform="translate(-5.8460889,3.4093922)"><tspan
          x="12.810358"
          y="8.7613449"
-         id="tspan1863">UI/UX Layer
+         id="tspan651">UI/UX Layer
 </tspan><tspan
          x="12.810358"
          y="21.10857"
-         id="tspan1865">Components 
+         id="tspan653">Components 
 </tspan></text>
     <text
        xml:space="preserve"
@@ -792,7 +742,7 @@
        transform="translate(108.84291,3.5948698)"><tspan
          x="12.810358"
          y="8.7613449"
-         id="tspan1867">Application Logic 
+         id="tspan655">Application Logic 
 </tspan></text>
     <text
        xml:space="preserve"
