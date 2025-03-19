@@ -101,6 +101,25 @@ export const listFiles = async () => {
     }
   };
 
+  export const downloadSettings = async () => {
+    try {
+      const response = await fetch(`${githubApiBase}settings.json`, {
+        headers: {
+          Authorization: `token ${token}`,
+          Accept: "application/vnd.github.v3.raw",
+        },
+      });
+      if (!response.ok) {
+        console.warn("No events.json present");
+        return;
+      }
+  
+      return (await response.json());
+    } catch (error) {
+      return "Error downloading events:" + error;
+    }
+  };
+
   export const downloadVideo = async () => {
     try {
       const response = await fetch(`${githubApiBase}video.mp4`, {
@@ -131,7 +150,7 @@ export const listFiles = async () => {
     }
   };
   
-  export const downloadAll = async (setMP3s,setSVGs,setEvents,setVideo) => {
+  export const downloadAll = async (setMP3s,setSVGs,setEvents,setSettings,setVideo) => {
     const [mp3Files, svgFiles] = await listFiles();
     setMP3s(await downloadMp3s(mp3Files));
     setSVGs(await downloadSVGs(svgFiles));
@@ -141,7 +160,7 @@ export const listFiles = async () => {
         ...event,  // Spread existing event properties
         idx: index // Add new idx field
       }));
-    
+    setSettings(await downloadSettings());
     setEvents(eventsWithIndex);
     
   };

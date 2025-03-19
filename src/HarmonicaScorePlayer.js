@@ -4,6 +4,7 @@ import { AppContext } from "./AppContext"; // Import context
 import AudioPlayer from "./AudioPlayer";
 import VideoPlayer from "./VideoPlayer";
 import Score from "./Score";
+import Tabs from "./Tabs";
 import Harmonica from "./Harmonica";
 import Background from "./Background";
 //import CountIn from "./CountIn";
@@ -22,6 +23,7 @@ function HarmonicaScorePlayer() {
     <div>
       <VideoPlayer/>
       <Score/>
+
       <Background/>
       <Harmonica/>
       

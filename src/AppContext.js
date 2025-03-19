@@ -1,5 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 import { downloadAll } from "./AppContextDownload"; // Import utility functions
+import Background from "./Background";
 export const AppContext = createContext();
 
 export function AppProvider({ children }) {
@@ -14,6 +15,7 @@ export function AppProvider({ children }) {
 
   const [mp3s, setMP3s] = useState([]);
   const [video, setVideo] = useState(null);
+
   const [audioTracks, setAudioTracks] = useState([null, null, null]);
   const [videoTrack, setVideoTrack] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -27,16 +29,30 @@ export function AppProvider({ children }) {
     { idx: 0, time: 0 },
     { idx: 1, time: 1000 },
   ]);
+  const [settings, setSettings] = useState({});
 
   const [svgs, setSVGs] = useState([]);
   const [svg, setSVG] = useState(null);
   const [svgPage, setSVGPage] = useState(0);
-  const [svgRect, setSVGRect] = useState({});
   const [svgScale, setSVGScale] = useState({});
-  const [svgElement, setSVGElement] = useState(null);
+  const [scoreElement, setScoreElement] = useState(null);
+  const [scoreScroll, setscoreScroll] = useState(0);
+
+  const [videoStyle, setVideoStyle] = useState(null);
+  const [videoContainerStyle, setVideoContainerStyle] = useState(null);
+  const [scoreStyle, setScoreStyle] = useState(null);
+
+  const mscorePageHeight = 4208.4
+  const mscorePageWidth = 2977.2
+
 
   const downloadFiles= () => {
-    downloadAll(setMP3s,setSVGs,setEvents,setVideo);
+    if(window.location.pathname.toLowerCase().includes("/chromatic/"))
+      setNHoles(12);
+    else if(window.location.pathname.toLowerCase().includes("/diatonic/"))
+      setNHoles(10);
+    downloadAll(setMP3s,setSVGs,setEvents,setSettings,setVideo);
+   
   };
 
   /* Handle Play */
@@ -90,6 +106,8 @@ export function AppProvider({ children }) {
 
   /* Set states according to the new event*/
   useEffect(() => {
+    //setscoreScroll(scoreScroll-10)
+
     if (!event) return;
 
     if (event.tabs) setTab(event.tabs);
@@ -152,7 +170,10 @@ export function AppProvider({ children }) {
 
         const time = audioTracks[0] ? audioTracks[0].currentTime : 0;
 
+        if(event.idx==event.size-1)handlePause();
         let nextEvent = events[event.idx + 1];
+
+        
 
         let newEvent;
         let msg = "";
@@ -182,42 +203,46 @@ export function AppProvider({ children }) {
     }
   }, [isPlaying, timerTick]);
 
+  let s=1;
   /* Update Cursor location accounting for <ScoreSVG> position and scaling */
   function updateCursor() {
-    if (!svgElement) return;
-
-    const rect = svgElement.getBoundingClientRect();
+    if (!scoreElement) return;
+  
+    const rect = scoreElement.getBoundingClientRect();
     const renderedWidth = rect.width;
     const renderedHeight = rect.height;
 
-    const scaleX = renderedWidth / 2977.2; // SVG width of as exported from MuseScore
-    const scaleY = renderedHeight / 4208.4; // SVG height of as exported from MuseScore
+    const scaleX = renderedWidth / mscorePageWidth; // SVG width of as exported from MuseScore
+    const scaleY = renderedHeight / mscorePageHeight; // SVG height of as exported from MuseScore
 
-    const scrollX = window.scrollX;
-    const scrollY = window.scrollY;
-
-    const adjustedRect = {
-      top: rect.top + scrollY,
-      left: rect.left + scrollX,
-      right: rect.right + scrollX,
-      bottom: rect.bottom + scrollY,
-      width: rect.width,
-      height: rect.height,
-    };
-
+    
     setSVGScale({ scaleX, scaleY });
-    setSVGRect(adjustedRect);
+    console.log(svgScale)
+    const newCursorTop = event.y * svgScale.scaleY + event.page*mscorePageHeight*scaleY
+    if(Math.abs(cursorPosition.top-newCursorTop)>10){
+      if(newCursorTop>renderedHeight*.3)
+        setscoreScroll(-newCursorTop+renderedHeight*.3)
+      else 
+        setscoreScroll(0)
+
+    }
+
+
     setCursorPosition({
-      top: svgRect.top + event.y * svgScale.scaleY,
-      left: svgRect.left + event.x * svgScale.scaleX,
+      top: event.y * svgScale.scaleY + event.page*mscorePageHeight*scaleY,
+      left: event.x * svgScale.scaleX,
       width: event.w * svgScale.scaleX,
       height: event.h * svgScale.scaleY,
-    });
+    }); 
+
+   
+
   }
 
-  /* Update Cursor if svgElement coordinates change */
+  /* Update Cursor if scoreElement coordinates change */
   useEffect(() => {
-    if (svgElement) {
+    console.log(scoreElement)
+    if (scoreElement) {
       window.addEventListener("resize", updateCursor);
       window.addEventListener("scroll", updateCursor);
       window.addEventListener("wheel", updateCursor);
@@ -232,7 +257,7 @@ export function AppProvider({ children }) {
       window.removeEventListener("mousemove", updateCursor);
       window.removeEventListener("touchmove", updateCursor);
     };
-  }, [svgElement]);
+  }, [scoreElement]);
 
   /* Prevents user zoom */
   useEffect(() => {
@@ -265,6 +290,113 @@ export function AppProvider({ children }) {
     };
   }, []);
 
+
+  /* Set styles according to settings*/
+  useEffect(() => {
+
+    if(!settings.videoPosition)return
+
+
+
+    if(settings.videoPosition.includes("cen")){
+      setVideoContainerStyle({})
+      setVideoStyle(
+        {
+          position: "fixed",
+          width:"100%",
+          height:"auto",
+          left: "0px",
+        }
+      )
+    }
+
+
+    if(settings.videoPosition.includes("left")){
+        setVideoContainerStyle(
+          {
+            position: "fixed",
+            width:"50%",
+            height: "100vh", 
+            left: "0px",
+            overflow:"hidden"
+          }
+        )
+        setVideoStyle(
+          {
+            position: "absolute",
+            width: "200%",
+            height: "100%",
+            left: "-50%",
+            objectFit: "cover",
+            
+          }
+        )
+      }
+    else if(settings.videoPosition.includes("right")){
+      setVideoContainerStyle(
+        {
+          position: "fixed",
+          width:"50%",
+          height: "100vh", 
+          right: "0px",
+          overflow:"hidden"
+        }
+      )
+      setVideoStyle(
+        {
+          position: "absolute",
+          width: "200%",
+          height: "100%",
+          left: "-50%",
+          objectFit: "cover",
+          
+        }
+      )
+    }
+
+    if(settings.scorePosition.includes("cen")){
+        setScoreStyle(
+          { 
+            position:"fixed",
+            
+            left: "50%",
+            transform: "translateX(-50%)",
+            height: "auto" 
+          }
+        )
+        setscoreScroll(-30)
+    }
+
+    if(settings.scorePosition.includes("left")){
+      setScoreStyle(
+        { 
+          position:"fixed",
+          width:"50%",
+          left: "0px",
+          height: "auto",
+          margin: "0px",
+          padding: "0px" 
+        }
+      )
+    }
+
+  if(settings.scorePosition.includes("right")){
+    setScoreStyle(
+      { 
+        position:"fixed",
+        width:"50%",
+        right: `0px`,
+        height: "auto" ,
+        margin: "0px",
+        padding: "0px"
+      }
+    )
+  }
+
+
+
+  }, [settings]);
+
   return (
     <AppContext.Provider
       value={{
@@ -284,12 +416,17 @@ export function AppProvider({ children }) {
         /* Shared with <HarmonicaMoving> */
         tab,
         /* Shared with <ScoreSVG> */
-        svg,
-        setSVGElement,
+        svgs,
+        setScoreElement,
+        scoreScroll,
         /* Shared with <ScoreCursor> */
         cursorPosition,
         video,setVideo,
-        setVideoTrack
+        setVideoTrack,
+
+
+        videoStyle,videoContainerStyle,scoreStyle,
+        events,svgScale
       }}
     >
       {children}
