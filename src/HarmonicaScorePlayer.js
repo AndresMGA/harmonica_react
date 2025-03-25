@@ -23,10 +23,8 @@ function HarmonicaScorePlayer() {
     <div>
       <VideoPlayer/>
       <Score/>
-
       <Background/>
       <Harmonica/>
-      
       <AudioPlayer/>
     </div>
   );
