@@ -1,3 +1,3 @@
-![Alt text](harmonica.svg)
+
 
 
