@@ -22,7 +22,7 @@ const Score = () => {
           alt={`SVG ${index + 1}`}
           style={{ width: "100%" ,
           
-            border: "1px solid black",
+            
             marginTop: `${-(index>0)*4}px`,
             padding: "0px"
           }}
